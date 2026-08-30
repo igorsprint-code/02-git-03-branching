@@ -314,6 +314,42 @@ Fast-forward
 ![rebase](screenshots/rebase3.png)
 
 
+Шаг 5. Делаем еще один коммит `git-rebase 2` с пушем заменив echo `"Parameter: $param"` на echo `"Next parameter: $param"`:
+
+![rebase](screenshots/rebase4.png)
+
+
+Промежуточный итог.
+
+Network на сразу отображает изменения. На github в вкладе Branches видим наши ветки:
+
+![branches](screenshots/branches.png)
+
+Вывод `gitlog`:
+
+
+![branches](screenshots/branches2.png)
+
+
+### Merge
+
+
+Сливаем ветку `git-merge` в main и отправляем изменения в репозиторий, конфликтов нет:
+
+
+![mainmerge](screenshots/mainmerge.png)
+
+Вывод `git log`:
+
+
+![mainmerge](screenshots/mainmergelog.png)
+
+
+
+
+
+
+
 
 
 
