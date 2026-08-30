@@ -261,6 +261,68 @@ Fast-forward
  
 ----
 
+
+### Решение
+
+Шаг 1. Создан каталог  `branching` и в нём два файла — `merge.sh` и `rebase.sh`:
+
+![1.1](screenshots/1-1.png)
+
+
+Шаг 2. Создан коммит:
+
+![1.2](screenshots/1-2.png)
+
+
+#### Подготовка файла merge.sh 
+
+Шаг 1. Создана ветка `git-merge`:
+
+![merge](screenshots/merge1.png)
+
+Шаг 2-5. Внесены измнения в файл `merge.sh`, создано два коммита `merge: @ instead *` и `merge: use shift`:
+
+![merge](screenshots/merge2.png)
+
+
+#### Изменения в ветке main:
+
+Шаг 1-2. Возвращаемся в ветку main, вносим изменения в `rebase.sh`, коммитим:
+
+
+![main](screenshots/main.png)
+
+
+Шаг 3. Отправляем измененную ветку в репозиторий:
+
+![main](screenshots/main2.png)
+
+
+#### Подготовка файла rebase.sh
+
+
+Шаг 1. Находим хеш коммита `prepare for merge and rebase`, выполняем `git checkout`:
+
+![rebase](screenshots/rebase1.png)
+
+Шаг 2. Создаем новую ветку `git-rebase`:
+
+![rebase](screenshots/rebase2.png)
+
+Шаг 3-4. Изменяем содержимое `rebase.sh`, отправляем изменения в ветку `git-rebase` с комментарием `git-rebase 1`:
+
+![rebase](screenshots/rebase3.png)
+
+
+
+
+
+
+
+
+
+
+
 ### Правила приёма домашнего задания
 
 В личном кабинете отправлена ссылка на network графика вашего репозитория.
